@@ -1,0 +1,78 @@
+/* Page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #eef2f3, #ffffff);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Title */
+h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+/* Input box */
+input {
+  padding: 10px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input focus */
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* Add button */
+button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+button:hover {
+  background: #0056b3;
+}
+
+/* Task list */
+ul {
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Task item */
+li {
+  list-style: none;
+  margin: 10px auto;
+  padding: 12px;
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete button inside task */
+li button {
+  background: #dc3545;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+li button:hover {
+  background: #a71d2a;
+}
