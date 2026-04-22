@@ -1,0 +1,84 @@
+/* Center the whole container */
+div {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input {
+  width: 90%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* Error messages */
+div div {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* Button */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+button:hover {
+  background: #0056b3;
+}
+
+/* Disabled button */
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* List section */
+h3 {
+  margin-top: 25px;
+  color: #444;
+}
+
+/* List items */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}

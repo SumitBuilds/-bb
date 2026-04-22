@@ -1,0 +1,30 @@
+<div style="text-align:center">
+  <h2>Add New Item</h2>
+
+  <form [formGroup]="itemForm" (ngSubmit)="addItem()">
+
+    <input type="text" formControlName="title" placeholder="Enter Title">
+    <br><br>
+
+    <div *ngIf="itemForm.controls['title'].invalid && itemForm.controls['title'].touched">
+      Title is required
+    </div>
+
+    <input type="text" formControlName="description" placeholder="Enter Description">
+    <br><br>
+
+    <div *ngIf="itemForm.controls['description'].invalid && itemForm.controls['description'].touched">
+      Description is required
+    </div>
+
+    <button type="submit" [disabled]="itemForm.invalid">Add Item</button>
+  </form>
+
+  <h3>Items List</h3>
+
+  <ul>
+    <li *ngFor="let item of items">
+      <b>{{item.title}}</b> - {{item.description}}
+    </li>
+  </ul>
+</div>
